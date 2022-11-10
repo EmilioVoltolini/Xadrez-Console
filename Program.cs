@@ -1,10 +1,18 @@
-﻿namespace xadrez_console
+﻿using System;
+using Tabuleiro;
+
+namespace xadrez_console
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Position P;
+
+            P = new Position(3, 4);
+            Console.WriteLine("Position: " + P);
+
+            Console.ReadLine();
         }
     }
 }
